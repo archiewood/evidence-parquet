@@ -30,7 +30,7 @@ title: Welcome to Evidence
       date_trunc('month', order_datetime) as month,
       sum(sales) as sales_usd,
       category
-  from memory.needful_parquet.orders
+  from needful_parquet.orders
   where category like '${inputs.category.value}'
   and date_part('year', order_datetime) like '${inputs.year.value}'
   group by all
