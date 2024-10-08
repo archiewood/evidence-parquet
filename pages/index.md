@@ -10,7 +10,7 @@ title: Welcome to Evidence
 ```sql categories
   select
       category
-  from memory.needful_parquet.orders
+  from needful_parquet.orders
   group by category
 ```
 
